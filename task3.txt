@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text"><br>
+	<input type="text"><br>
+	<input type="text"><br>
+	<input type="button" value="面積：">
+</body>
+<script>
+	var inps = document.querySelectorAll("input");
+	inps[3].onclick = function(){
+		alert(Math.max(inps[0].value,inps[1].value,inps[2].value));
+        var a = Number(inps[0].value);
+        var b = Number(inps[1].value);
+        var c = Number(inps[2].value); 
+      var t;
+var s;
+t=(x+y+z)/2;
+s=Math.sqrt(t*(t-x)*(t-y)*(t-z));
+       alert(+s);
+	}
+	
+</script>
+</html>
