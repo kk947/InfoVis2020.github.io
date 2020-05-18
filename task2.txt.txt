@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text"><br>
+	<input type="text"><br>
+	<input type="text"><br>
+	<input type="button" value="最大値：">
+</body>
+<script>
+	var inps = document.querySelectorAll("input");
+	inps[3].onclick = function(){
+		alert(Math.max(inps[0].value,inps[1].value,inps[2].value));
+        var a = Number(inps[0].value);
+        var b = Number(inps[1].value);
+        var c = Number(inps[2].value); 
+       var max = 0;
+       if(a >= max){
+       	max = a;
+       }
+       if(b >= max){
+       	max = b;
+       }
+       if(c >= max){
+       	max = c;
+       }
+       alert(max);
+ 
+ 
+	}
+	
+</script>
+</html>
